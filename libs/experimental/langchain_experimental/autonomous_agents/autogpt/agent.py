@@ -149,7 +149,7 @@ class AutoGPT:
             # print(self.chat_history_memory)
             while True:
                 # print('message token: ', token_count)
-                if token_count > 400:  # move oldest chat to memory
+                if token_count > 1000:  # move oldest chat to memory
                     oldest_user_input = self.chat_history_memory.messages.pop(0).content
                     oldest_assistant_reply = self.chat_history_memory.messages.pop(0).content
                     oldest_result = self.chat_history_memory.messages.pop(0).content
