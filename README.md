@@ -1,5 +1,8 @@
 # 🦜️🔗 LangChain
+from langchain.agents import AgentExecutor, create_openai_tools_agent
 
+agent = create_openai_tools_agent(llm, tools, prompt)
+agent_executor = AgentExecutor(agent=agent, tools=tools)
 ⚡ Building applications with LLMs through composability ⚡
 
 [![Release Notes](https://img.shields.io/github/release/langchain-ai/langchain)](https://github.com/langchain-ai/langchain/releases)
